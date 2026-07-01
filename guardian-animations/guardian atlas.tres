@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://gjqx2aljb15b"]
+
+[ext_resource type="Texture2D" uid="uid://bntedxrd0737" path="res://guardian_rigged_attack_guardian atlas.png" id="1_avl15"]
+
+[resource]
+resource_name = "guardian atlas"
+transparency = 4
+cull_mode = 2
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
+albedo_texture = ExtResource("1_avl15")
+texture_repeat = false

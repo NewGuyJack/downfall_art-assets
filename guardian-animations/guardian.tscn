@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfv1o2lejujil"]
+
+[ext_resource type="PackedScene" uid="uid://drk4k4ui7apkd" path="res://guardian_rigged_attack.glb" id="1_1mwot"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_1mwot"]
+light_mode = 1
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_vr77e"]
+viewport_path = NodePath("SubViewport")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("CanvasItemMaterial_1mwot")
+texture = SubResource("ViewportTexture_vr77e")
+centered = false
+
+[node name="SubViewport" type="SubViewport" parent="."]
+transparent_bg = true
+size = Vector2i(1024, 1024)
+
+[node name="guardian_rigged_attack" parent="SubViewport" instance=ExtResource("1_1mwot")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.58511275, 1.4560999)
+projection = 1
+size = 2.0

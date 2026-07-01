@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0uqvwys47p84"]
+
+[ext_resource type="PackedScene" uid="uid://drk4k4ui7apkd" path="res://guardian_rigged_attack.glb" id="1_dognl"]
+
+[node name="guardian_rigged_attack" instance=ExtResource("1_dognl")]
